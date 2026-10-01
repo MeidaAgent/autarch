@@ -2627,3 +2627,5 @@
     right: 4.15rem;
   }
 }
+
+.token-address { display: none !important; }

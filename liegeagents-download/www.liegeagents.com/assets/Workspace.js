@@ -98,9 +98,9 @@ var U = j(H),
   q = (e) =>
     e
       ? new Date(e).toLocaleDateString(`en-US`, {
-          month: `short`,
-          day: `numeric`,
-        })
+        month: `short`,
+        day: `numeric`,
+      })
       : `—`;
 function te({
   state: e,
@@ -291,61 +291,61 @@ function te({
                   className: `premium-job-list`,
                   children: v.length
                     ? v.map((e) => {
-                        let n = t.find((t) => t.id === e.agent);
-                        return (0, G.jsxs)(
-                          `button`,
-                          {
-                            className: `premium-job-row`,
-                            onClick: () => a(e),
-                            children: [
-                              (0, G.jsx)(A, { agent: n, size: 21 }),
-                              (0, G.jsxs)(`span`, {
-                                className: `premium-job-title`,
-                                children: [
-                                  (0, G.jsx)(`strong`, { children: e.title }),
-                                  (0, G.jsxs)(`small`, {
-                                    children: [
-                                      n?.name || e.agent,
-                                      (0, G.jsx)(`i`, {}),
-                                      ` `,
-                                      e.id,
-                                    ],
-                                  }),
-                                ],
-                              }),
-                              (0, G.jsx)(`span`, {
-                                className: `premium-job-progress`,
-                                children: (0, G.jsx)(T, { value: e.status }),
-                              }),
-                              (0, G.jsxs)(`span`, {
-                                className: `premium-job-budget`,
-                                children: [
-                                  (0, G.jsxs)(`b`, {
-                                    children: [
-                                      f(e.budget),
-                                      ` `,
-                                      (0, G.jsx)(`small`, { children: `USDG` }),
-                                    ],
-                                  }),
-                                  (0, G.jsxs)(`span`, {
-                                    children: [`Due `, q(e.deadline)],
-                                  }),
-                                ],
-                              }),
-                              (0, G.jsx)(d, { size: 14 }),
-                            ],
-                          },
-                          e.id,
-                        );
-                      })
+                      let n = t.find((t) => t.id === e.agent);
+                      return (0, G.jsxs)(
+                        `button`,
+                        {
+                          className: `premium-job-row`,
+                          onClick: () => a(e),
+                          children: [
+                            (0, G.jsx)(A, { agent: n, size: 21 }),
+                            (0, G.jsxs)(`span`, {
+                              className: `premium-job-title`,
+                              children: [
+                                (0, G.jsx)(`strong`, { children: e.title }),
+                                (0, G.jsxs)(`small`, {
+                                  children: [
+                                    n?.name || e.agent,
+                                    (0, G.jsx)(`i`, {}),
+                                    ` `,
+                                    e.id,
+                                  ],
+                                }),
+                              ],
+                            }),
+                            (0, G.jsx)(`span`, {
+                              className: `premium-job-progress`,
+                              children: (0, G.jsx)(T, { value: e.status }),
+                            }),
+                            (0, G.jsxs)(`span`, {
+                              className: `premium-job-budget`,
+                              children: [
+                                (0, G.jsxs)(`b`, {
+                                  children: [
+                                    f(e.budget),
+                                    ` `,
+                                    (0, G.jsx)(`small`, { children: `USDG` }),
+                                  ],
+                                }),
+                                (0, G.jsxs)(`span`, {
+                                  children: [`Due `, q(e.deadline)],
+                                }),
+                              ],
+                            }),
+                            (0, G.jsx)(d, { size: 14 }),
+                          ],
+                        },
+                        e.id,
+                      );
+                    })
                     : (0, G.jsx)(x, {
-                        title: `No live jobs yet`,
-                        action: (0, G.jsx)(E, {
-                          onClick: r,
-                          children: `Create a job`,
-                        }),
-                        children: `Publish or select an active marketplace agent to begin.`,
+                      title: `No live jobs yet`,
+                      action: (0, G.jsx)(E, {
+                        onClick: r,
+                        children: `Create a job`,
                       }),
+                      children: `Publish or select an active marketplace agent to begin.`,
+                    }),
                 }),
               ],
             }),
@@ -422,69 +422,69 @@ function te({
       }),
       t.length
         ? (0, G.jsx)(`div`, {
-            className: `discovery-grid`,
-            children: t
-              .slice(0, 3)
-              .map((e) =>
-                (0, G.jsxs)(
-                  `section`,
-                  {
-                    className: `premium-surface discovery-card`,
-                    style: { "--agent-color": e.color },
-                    children: [
-                      (0, G.jsxs)(`div`, {
-                        className: `discovery-top`,
-                        children: [
-                          (0, G.jsx)(A, { agent: e, size: 23 }),
-                          (0, G.jsx)(`span`, { children: e.category }),
-                          (0, G.jsx)(`button`, {
-                            className: `icon-button`,
-                            "aria-label": `View ` + e.name,
-                            onClick: () => o(e),
-                            children: (0, G.jsx)(c, { size: 16 }),
-                          }),
-                        ],
-                      }),
-                      (0, G.jsxs)(`button`, {
-                        className: `discovery-name`,
-                        onClick: () => o(e),
-                        children: [
-                          e.name,
-                          (0, G.jsx)(`span`, { children: e.symbol }),
-                        ],
-                      }),
-                      (0, G.jsx)(`p`, { children: e.description }),
-                      (0, G.jsxs)(`div`, {
-                        className: `discovery-bottom`,
-                        children: [
-                          (0, G.jsxs)(`span`, {
-                            children: [
-                              `From `,
-                              (0, G.jsx)(`b`, { children: f(e.price) }),
-                              ` USDG / job`,
-                            ],
-                          }),
-                          (0, G.jsxs)(`button`, {
-                            onClick: () => s(e),
-                            children: [`Hire `, (0, G.jsx)(d, { size: 13 })],
-                          }),
-                        ],
-                      }),
-                    ],
-                  },
-                  e.id,
-                ),
+          className: `discovery-grid`,
+          children: t
+            .slice(0, 3)
+            .map((e) =>
+              (0, G.jsxs)(
+                `section`,
+                {
+                  className: `premium-surface discovery-card`,
+                  style: { "--agent-color": e.color },
+                  children: [
+                    (0, G.jsxs)(`div`, {
+                      className: `discovery-top`,
+                      children: [
+                        (0, G.jsx)(A, { agent: e, size: 23 }),
+                        (0, G.jsx)(`span`, { children: e.category }),
+                        (0, G.jsx)(`button`, {
+                          className: `icon-button`,
+                          "aria-label": `View ` + e.name,
+                          onClick: () => o(e),
+                          children: (0, G.jsx)(c, { size: 16 }),
+                        }),
+                      ],
+                    }),
+                    (0, G.jsxs)(`button`, {
+                      className: `discovery-name`,
+                      onClick: () => o(e),
+                      children: [
+                        e.name,
+                        (0, G.jsx)(`span`, { children: e.symbol }),
+                      ],
+                    }),
+                    (0, G.jsx)(`p`, { children: e.description }),
+                    (0, G.jsxs)(`div`, {
+                      className: `discovery-bottom`,
+                      children: [
+                        (0, G.jsxs)(`span`, {
+                          children: [
+                            `From `,
+                            (0, G.jsx)(`b`, { children: f(e.price) }),
+                            ` USDG / job`,
+                          ],
+                        }),
+                        (0, G.jsxs)(`button`, {
+                          onClick: () => s(e),
+                          children: [`Hire `, (0, G.jsx)(d, { size: 13 })],
+                        }),
+                      ],
+                    }),
+                  ],
+                },
+                e.id,
               ),
-          })
+            ),
+        })
         : (0, G.jsx)(x, {
-            title: `No active agents yet`,
-            action: (0, G.jsx)(E, {
-              secondary: !0,
-              onClick: () => l(`launch`),
-              children: `Publish an agent`,
-            }),
-            children: `New agent profiles will appear here as their owners publish them.`,
+          title: `No active agents yet`,
+          action: (0, G.jsx)(E, {
+            secondary: !0,
+            onClick: () => l(`launch`),
+            children: `Publish an agent`,
           }),
+          children: `New agent profiles will appear here as their owners publish them.`,
+        }),
     ],
   });
 }
@@ -554,41 +554,41 @@ function ne({
           className: `command-results`,
           children: p.length
             ? p.map((e) => {
-                let t = e.href ? `a` : `button`;
-                return (0, G.jsxs)(
-                  t,
-                  {
-                    href: e.href,
-                    onClick: e.action,
-                    children: [
-                      (0, G.jsx)(`span`, {
-                        className: `command-result-icon`,
-                        children: e.icon,
-                      }),
-                      (0, G.jsxs)(`span`, {
-                        children: [
-                          (0, G.jsx)(`strong`, { children: e.label }),
-                          (0, G.jsx)(`small`, { children: e.meta }),
-                        ],
-                      }),
-                      (0, G.jsx)(`span`, {
-                        className: `command-result-type`,
-                        children: e.type,
-                      }),
-                      (0, G.jsx)(c, { size: 14 }),
-                    ],
-                  },
-                  e.id,
-                );
-              })
+              let t = e.href ? `a` : `button`;
+              return (0, G.jsxs)(
+                t,
+                {
+                  href: e.href,
+                  onClick: e.action,
+                  children: [
+                    (0, G.jsx)(`span`, {
+                      className: `command-result-icon`,
+                      children: e.icon,
+                    }),
+                    (0, G.jsxs)(`span`, {
+                      children: [
+                        (0, G.jsx)(`strong`, { children: e.label }),
+                        (0, G.jsx)(`small`, { children: e.meta }),
+                      ],
+                    }),
+                    (0, G.jsx)(`span`, {
+                      className: `command-result-type`,
+                      children: e.type,
+                    }),
+                    (0, G.jsx)(c, { size: 14 }),
+                  ],
+                },
+                e.id,
+              );
+            })
             : (0, G.jsxs)(`p`, {
-                className: `command-empty`,
-                children: [
-                  `No results for “`,
-                  l,
-                  `”. Try an agent name or job ID.`,
-                ],
-              }),
+              className: `command-empty`,
+              children: [
+                `No results for “`,
+                l,
+                `”. Try an agent name or job ID.`,
+              ],
+            }),
         }),
         (0, G.jsxs)(`div`, {
           className: `command-foot`,
@@ -707,7 +707,7 @@ function Z() {
       (e.ctrlKey || e.metaKey) &&
         e.key.toLowerCase() === `k` &&
         (e.preventDefault(),
-        k((e) => (e?.type === `search` ? null : { type: `search` })));
+          k((e) => (e?.type === `search` ? null : { type: `search` })));
     };
     return (
       window.addEventListener(`keydown`, e),
@@ -717,17 +717,17 @@ function Z() {
   let Y = (e) => j(e),
     Z = () => {
       let t = URL.createObjectURL(
-          new Blob(
-            [
-              JSON.stringify(
-                { ...e, exportedAt: new Date().toISOString() },
-                null,
-                2,
-              ),
-            ],
-            { type: `application/json` },
-          ),
+        new Blob(
+          [
+            JSON.stringify(
+              { ...e, exportedAt: new Date().toISOString() },
+              null,
+              2,
+            ),
+          ],
+          { type: `application/json` },
         ),
+      ),
         n = document.createElement(`a`);
       ((n.href = t),
         (n.download = `Autarch-workspace-preferences.json`),
@@ -750,10 +750,10 @@ function Z() {
           .includes(p.toLowerCase()),
     ));
   let pe = K.filter(
-      (e) =>
-        (w === `All` || e.status === w) &&
-        (e.title + ` ` + e.id).toLowerCase().includes(p.toLowerCase()),
-    ),
+    (e) =>
+      (w === `All` || e.status === w) &&
+      (e.title + ` ` + e.id).toLowerCase().includes(p.toLowerCase()),
+  ),
     $ = O?.type === `job` ? K.find((e) => e.id === O.id) : null,
     me = (e) =>
       t((t) => ({
@@ -959,166 +959,166 @@ function Z() {
             className: `workspace-main`,
             children: [
               !F.apiSession &&
-                (0, G.jsxs)(`div`, {
-                  className: `sample-notice`,
-                  children: [
-                    (0, G.jsxs)(`span`, {
-                      children: [
-                        (0, G.jsx)(`i`, {}),
-                        ` SIGNED SESSION REQUIRED`,
-                      ],
-                    }),
-                    `Connect and sign in to create or view private jobs.`,
-                  ],
-                }),
+              (0, G.jsxs)(`div`, {
+                className: `sample-notice`,
+                children: [
+                  (0, G.jsxs)(`span`, {
+                    children: [
+                      (0, G.jsx)(`i`, {}),
+                      ` SIGNED SESSION REQUIRED`,
+                    ],
+                  }),
+                  `Connect and sign in to create or view private jobs.`,
+                ],
+              }),
               n && (0, G.jsx)(h, { error: !0, children: n }),
-              F.apiSession && B && (0, G.jsx)(h, { error: !0, children: B }),
+              B && (0, G.jsx)(h, { error: !0, children: B }),
               (o === `overview` || !X.some((e) => e[0] === o)) &&
-                (0, G.jsx)(te, {
-                  state: { ...e, jobs: K },
-                  agents: U,
-                  account: F.apiSession,
-                  onCreate: () => Q(),
-                  onJob: (e) => k({ type: `job`, id: e.id }),
-                  onAgent: (e) => {
-                    location.href = P(e);
-                  },
-                  onHire: Q,
-                  navigate: J,
-                  onSaved: () => J(`agents`, `Saved`),
-                }),
+              (0, G.jsx)(te, {
+                state: { ...e, jobs: K },
+                agents: U,
+                account: F.apiSession,
+                onCreate: () => Q(),
+                onJob: (e) => k({ type: `job`, id: e.id }),
+                onAgent: (e) => {
+                  location.href = P(e);
+                },
+                onHire: Q,
+                navigate: J,
+                onSaved: () => J(`agents`, `Saved`),
+              }),
               o === `agents` &&
-                (0, G.jsx)(N, {
-                  agents: U,
-                  saved: e.saved,
-                  onSave: me,
-                  onHire: Q,
-                  initialFilter: w,
-                }),
+              (0, G.jsx)(N, {
+                agents: U,
+                saved: e.saved,
+                onSave: me,
+                onHire: Q,
+                initialFilter: w,
+              }),
               o === `jobs` &&
-                (0, G.jsxs)(G.Fragment, {
-                  children: [
-                    (0, G.jsx)(S, {
-                      eyebrow: `FROM BRIEF TO SETTLEMENT`,
-                      title: `Your jobs.`,
-                      action: (0, G.jsxs)(E, {
-                        onClick: () => Q(),
-                        disabled: !F.apiSession,
-                        children: [(0, G.jsx)(i, { size: 15 }), `Create a job`],
-                      }),
-                      children: `Jobs shown here are loaded from your Autarch account.`,
+              (0, G.jsxs)(G.Fragment, {
+                children: [
+                  (0, G.jsx)(S, {
+                    eyebrow: `FROM BRIEF TO SETTLEMENT`,
+                    title: `Your jobs.`,
+                    action: (0, G.jsxs)(E, {
+                      onClick: () => Q(),
+                      disabled: !F.apiSession,
+                      children: [(0, G.jsx)(i, { size: 15 }), `Create a job`],
                     }),
-                    (0, G.jsxs)(`div`, {
-                      className: `toolbar`,
-                      children: [
-                        (0, G.jsx)(ae, {
-                          value: p,
-                          onChange: b,
-                          label: `Search jobs`,
-                        }),
-                        (0, G.jsx)(`select`, {
-                          "aria-label": `Filter jobs by status`,
-                          value: w,
-                          onChange: (e) => T(e.target.value),
-                          children: [
-                            `All`,
-                            `Open`,
-                            `Funded`,
-                            `Submitted`,
-                            `Completed`,
-                            `Rejected`,
-                            `Expired`,
-                          ].map((e) =>
-                            (0, G.jsx)(`option`, { children: e }, e),
-                          ),
-                        }),
-                      ],
-                    }),
-                    pe.length
-                      ? (0, G.jsx)(oe, {
-                          jobs: pe,
-                          agents: U,
-                          onSelect: (e) => k({ type: `job`, id: e.id }),
-                        })
-                      : (0, G.jsx)(x, {
-                          title: F.apiSession
-                            ? `No jobs yet`
-                            : `Sign in to view jobs`,
-                          children: F.apiSession
-                            ? `Create a job when an agent is available in the marketplace.`
-                            : `Your private jobs are available after wallet sign-in.`,
-                        }),
-                    F.apiSession &&
-                      (0, G.jsx)(h, {
-                        children: `Live jobs are private to their client, agent owner, and evaluator. Funding needs a sufficient internal USDG balance.`,
+                    children: `Jobs shown here are loaded from your Autarch account.`,
+                  }),
+                  (0, G.jsxs)(`div`, {
+                    className: `toolbar`,
+                    children: [
+                      (0, G.jsx)(ae, {
+                        value: p,
+                        onChange: b,
+                        label: `Search jobs`,
                       }),
-                  ],
-                }),
+                      (0, G.jsx)(`select`, {
+                        "aria-label": `Filter jobs by status`,
+                        value: w,
+                        onChange: (e) => T(e.target.value),
+                        children: [
+                          `All`,
+                          `Open`,
+                          `Funded`,
+                          `Submitted`,
+                          `Completed`,
+                          `Rejected`,
+                          `Expired`,
+                        ].map((e) =>
+                          (0, G.jsx)(`option`, { children: e }, e),
+                        ),
+                      }),
+                    ],
+                  }),
+                  pe.length
+                    ? (0, G.jsx)(oe, {
+                      jobs: pe,
+                      agents: U,
+                      onSelect: (e) => k({ type: `job`, id: e.id }),
+                    })
+                    : (0, G.jsx)(x, {
+                      title: F.apiSession
+                        ? `No jobs yet`
+                        : `Sign in to view jobs`,
+                      children: F.apiSession
+                        ? `Create a job when an agent is available in the marketplace.`
+                        : `Your private jobs are available after wallet sign-in.`,
+                    }),
+                  F.apiSession &&
+                  (0, G.jsx)(h, {
+                    children: `Live jobs are private to their client, agent owner, and evaluator. Funding needs a sufficient internal USDG balance.`,
+                  }),
+                ],
+              }),
               o === `launch` &&
-                (0, G.jsx)(fe, {
-                  token: F.apiSession ? `cookie` : null,
-                  onSave: he,
-                }),
+              (0, G.jsx)(fe, {
+                token: F.apiSession ? `cookie` : null,
+                onSave: he,
+              }),
               o === `settings` &&
-                (0, G.jsxs)(G.Fragment, {
-                  children: [
-                    (0, G.jsx)(S, {
-                      eyebrow: `WORKSPACE SETTINGS`,
-                      title: `Your account.`,
-                      children: `Manage your current wallet connection, evaluator profile, and saved shortlist.`,
-                    }),
-                    (0, G.jsxs)(`div`, {
-                      className: `settings-panel`,
-                      children: [
-                        (0, G.jsx)(`h2`, { children: `Shortlist` }),
-                        (0, G.jsxs)(`p`, {
-                          children: [
-                            e.saved.length,
-                            ` marketplace agents saved in this browser.`,
-                          ],
-                        }),
-                        (0, G.jsxs)(E, {
-                          onClick: Z,
-                          children: [
-                            (0, G.jsx)(M, { size: 15 }),
-                            `Export preferences`,
-                          ],
-                        }),
-                      ],
-                    }),
-                    (0, G.jsxs)(`div`, {
-                      className: `settings-panel`,
-                      children: [
-                        (0, G.jsx)(`h2`, { children: `Connection status` }),
-                        (0, G.jsx)(`p`, {
-                          children: F.session.address
-                            ? `Connected as ${F.session.address} on ${F.ready ? `Robinhood Chain` : `another network`}.`
-                            : `Use Connect wallet to open the wallet provider.`,
-                        }),
-                        F.apiSession &&
-                          (0, G.jsxs)(`p`, {
-                            className: `mono muted`,
-                            children: [`Account ID: `, F.apiSession.id],
-                          }),
-                        F.session.address &&
-                          (0, G.jsx)(E, {
-                            secondary: !0,
-                            onClick: F.disconnect,
-                            children: `Disconnect wallet`,
-                          }),
-                      ],
-                    }),
-                    F.apiSession && (0, G.jsx)(ue, { token: `cookie` }),
-                    new URLSearchParams(location.search).get(`operator`) ===
-                      `1` &&
-                      F.apiSession &&
-                      (0, G.jsx)(de, {
-                        token: `cookie`,
-                        currentUser: F.apiSession,
-                        onNotice: Y,
+              (0, G.jsxs)(G.Fragment, {
+                children: [
+                  (0, G.jsx)(S, {
+                    eyebrow: `WORKSPACE SETTINGS`,
+                    title: `Your account.`,
+                    children: `Manage your current wallet connection, evaluator profile, and saved shortlist.`,
+                  }),
+                  (0, G.jsxs)(`div`, {
+                    className: `settings-panel`,
+                    children: [
+                      (0, G.jsx)(`h2`, { children: `Shortlist` }),
+                      (0, G.jsxs)(`p`, {
+                        children: [
+                          e.saved.length,
+                          ` marketplace agents saved in this browser.`,
+                        ],
                       }),
-                  ],
-                }),
+                      (0, G.jsxs)(E, {
+                        onClick: Z,
+                        children: [
+                          (0, G.jsx)(M, { size: 15 }),
+                          `Export preferences`,
+                        ],
+                      }),
+                    ],
+                  }),
+                  (0, G.jsxs)(`div`, {
+                    className: `settings-panel`,
+                    children: [
+                      (0, G.jsx)(`h2`, { children: `Connection status` }),
+                      (0, G.jsx)(`p`, {
+                        children: F.session.address
+                          ? `Connected as ${F.session.address} on ${F.ready ? `Arc` : `another network`}.`
+                          : `Use Connect wallet to open the wallet provider.`,
+                      }),
+                      F.apiSession &&
+                      (0, G.jsxs)(`p`, {
+                        className: `mono muted`,
+                        children: [`Account ID: `, F.apiSession.id],
+                      }),
+                      F.session.address &&
+                      (0, G.jsx)(E, {
+                        secondary: !0,
+                        onClick: F.disconnect,
+                        children: `Disconnect wallet`,
+                      }),
+                    ],
+                  }),
+                  F.apiSession && (0, G.jsx)(ue, { token: `cookie` }),
+                  new URLSearchParams(location.search).get(`operator`) ===
+                  `1` &&
+                  F.apiSession &&
+                  (0, G.jsx)(de, {
+                    token: `cookie`,
+                    currentUser: F.apiSession,
+                    onNotice: Y,
+                  }),
+                ],
+              }),
             ],
           }),
           (0, G.jsxs)(`footer`, {
@@ -1153,47 +1153,47 @@ function Z() {
         ],
       }),
       A &&
-        (0, G.jsxs)(`div`, {
-          className: `toast`,
-          role: `status`,
-          children: [(0, G.jsx)(u, { size: 15 }), A],
-        }),
+      (0, G.jsxs)(`div`, {
+        className: `toast`,
+        role: `status`,
+        children: [(0, G.jsx)(u, { size: 15 }), A],
+      }),
       O?.type === `search` &&
-        (0, G.jsx)(ne, {
-          agents: U,
-          jobs: K,
-          onClose: () => k(null),
-          onJob: (e) => k({ type: `job`, id: e.id }),
-          onAgent: (e) => {
-            location.href = P(e);
-          },
-          navigate: J,
-        }),
+      (0, G.jsx)(ne, {
+        agents: U,
+        jobs: K,
+        onClose: () => k(null),
+        onJob: (e) => k({ type: `job`, id: e.id }),
+        onAgent: (e) => {
+          location.href = P(e);
+        },
+        navigate: J,
+      }),
       O?.type === `create-job` &&
-        (0, G.jsx)(ce, {
-          agents: U,
-          defaultAgent: O.agent,
-          token: F.apiSession ? `cookie` : null,
-          onClose: () => k(null),
-          onSave: ge,
-        }),
+      (0, G.jsx)(ce, {
+        agents: U,
+        defaultAgent: O.agent,
+        token: F.apiSession ? `cookie` : null,
+        onClose: () => k(null),
+        onSave: ge,
+      }),
       O?.type === `agent` &&
-        (0, G.jsx)(se, {
-          agent: O.agent,
-          onClose: () => k(null),
-          onHire: () => Q(O.agent),
-        }),
+      (0, G.jsx)(se, {
+        agent: O.agent,
+        onClose: () => k(null),
+        onHire: () => Q(O.agent),
+      }),
       $ &&
-        (0, G.jsx)(le, {
-          job: $,
-          agent: U.find((e) => e.id === $.agent),
-          token: `cookie`,
-          account: F.apiSession,
-          onClose: () => k(null),
-          onUpdated: async (e) => {
-            (await q(), Y(e));
-          },
-        }),
+      (0, G.jsx)(le, {
+        job: $,
+        agent: U.find((e) => e.id === $.agent),
+        token: `cookie`,
+        account: F.apiSession,
+        onClose: () => k(null),
+        onUpdated: async (e) => {
+          (await q(), Y(e));
+        },
+      }),
     ],
   });
 }
@@ -1361,14 +1361,14 @@ function se({ agent: e, onClose: t, onHire: n }) {
 }
 function ce({ agents: e, defaultAgent: t, token: n, onClose: r, onSave: i }) {
   let [a, o] = (0, W.useState)({
-      title: ``,
-      brief: ``,
-      criteria: ``,
-      agent: t || e[0]?.id,
-      evaluator: ``,
-      budget: e.find((e) => e.id === t)?.price || 0,
-      deadline: J(7),
-    }),
+    title: ``,
+    brief: ``,
+    criteria: ``,
+    agent: t || e[0]?.id,
+    evaluator: ``,
+    budget: e.find((e) => e.id === t)?.price || 0,
+    deadline: J(7),
+  }),
     [s, c] = (0, W.useState)(``),
     [l, u] = (0, W.useState)(!1),
     [p, g] = (0, W.useState)([]);
@@ -1380,15 +1380,15 @@ function ce({ agents: e, defaultAgent: t, token: n, onClose: r, onSave: i }) {
         .then((t) => {
           e && g(t.data || []);
         })
-        .catch(() => {}),
+        .catch(() => { }),
       () => {
         e = !1;
       }
     );
   }, []);
   let _ = (e, t) => {
-      (o({ ...a, [e]: t }), c(``));
-    },
+    (o({ ...a, [e]: t }), c(``));
+  },
     v = e.find((e) => e.id === a.agent);
   return (0, G.jsx)(b, {
     title: `Create a job`,
@@ -1559,9 +1559,9 @@ Delivered in the requested format`,
           ],
         }),
         !p.length &&
-          (0, G.jsx)(h, {
-            children: `No eligible independent evaluators are listed yet. You can create a job without one, but it cannot be settled until an evaluator is assigned.`,
-          }),
+        (0, G.jsx)(h, {
+          children: `No eligible independent evaluators are listed yet. You can create a job without one, but it cannot be settled until an evaluator is assigned.`,
+        }),
         s && (0, G.jsx)(h, { error: !0, children: s }),
         (0, G.jsxs)(`div`, {
           className: `form-actions`,
@@ -1615,15 +1615,15 @@ function le({
     A();
   }, [e.id]);
   let j = async (e, t, n) => {
-      (g(e), l(``));
-      try {
-        (await t(), await A(), await a(n));
-      } catch (e) {
-        l(e?.message || `The job action could not be completed.`);
-      } finally {
-        g(``);
-      }
-    },
+    (g(e), l(``));
+    try {
+      (await t(), await A(), await a(n));
+    } catch (e) {
+      l(e?.message || `The job action could not be completed.`);
+    } finally {
+      g(``);
+    }
+  },
     M = o || e,
     N = String(M.status || e.status).replace(/^./, (e) => e.toUpperCase()),
     P = o?.client_id === r?.id,
@@ -1638,7 +1638,7 @@ function le({
       : typeof M.acceptance_criteria == `string`
         ? JSON.parse(M.acceptance_criteria || `[]`)
         : [];
-  } catch {}
+  } catch { }
   return (0, G.jsx)(b, {
     title: e.title,
     onClose: i,
@@ -1717,222 +1717,222 @@ function le({
           ),
         }),
         M.submission &&
-          (0, G.jsxs)(G.Fragment, {
-            children: [
-              (0, G.jsx)(`h3`, { children: `Delivery` }),
-              (0, G.jsx)(`p`, {
-                className: `job-brief`,
-                children: M.submission.deliverable,
-              }),
-              M.submission.evidence?.length > 0 &&
-                (0, G.jsx)(`div`, {
-                  className: `evidence-links`,
-                  children: M.submission.evidence.map((e) =>
-                    (0, G.jsxs)(
-                      `a`,
-                      {
-                        href: e,
-                        target: `_blank`,
-                        rel: `noreferrer`,
-                        children: [(0, G.jsx)(ee, { size: 13 }), e],
-                      },
-                      e,
-                    ),
-                  ),
-                }),
-            ],
-          }),
+        (0, G.jsxs)(G.Fragment, {
+          children: [
+            (0, G.jsx)(`h3`, { children: `Delivery` }),
+            (0, G.jsx)(`p`, {
+              className: `job-brief`,
+              children: M.submission.deliverable,
+            }),
+            M.submission.evidence?.length > 0 &&
+            (0, G.jsx)(`div`, {
+              className: `evidence-links`,
+              children: M.submission.evidence.map((e) =>
+                (0, G.jsxs)(
+                  `a`,
+                  {
+                    href: e,
+                    target: `_blank`,
+                    rel: `noreferrer`,
+                    children: [(0, G.jsx)(ee, { size: 13 }), e],
+                  },
+                  e,
+                ),
+              ),
+            }),
+          ],
+        }),
         M.evaluation &&
-          (0, G.jsxs)(G.Fragment, {
-            children: [
-              (0, G.jsxs)(`h3`, {
-                children: [`Evaluation · `, M.evaluation.outcome],
-              }),
-              (0, G.jsx)(`p`, {
-                className: `job-brief`,
-                children: M.evaluation.rationale,
-              }),
-            ],
-          }),
+        (0, G.jsxs)(G.Fragment, {
+          children: [
+            (0, G.jsxs)(`h3`, {
+              children: [`Evaluation · `, M.evaluation.outcome],
+            }),
+            (0, G.jsx)(`p`, {
+              className: `job-brief`,
+              children: M.evaluation.rationale,
+            }),
+          ],
+        }),
         c && (0, G.jsx)(h, { error: !0, children: c }),
         o &&
-          (0, G.jsxs)(`div`, {
-            className: `live-job-action`,
-            children: [
-              (0, G.jsx)(`h3`, { children: `Live job action` }),
-              N === `Open` &&
-                P &&
-                (0, G.jsxs)(G.Fragment, {
-                  children: [
-                    (0, G.jsx)(`p`, {
-                      children:
+        (0, G.jsxs)(`div`, {
+          className: `live-job-action`,
+          children: [
+            (0, G.jsx)(`h3`, { children: `Live job action` }),
+            N === `Open` &&
+            P &&
+            (0, G.jsxs)(G.Fragment, {
+              children: [
+                (0, G.jsx)(`p`, {
+                  children:
+                    o.escrow_mode === `onchain`
+                      ? `Your wallet will send the USDG budget and a quoted $1 ETH reserve to this job’s escrow wallet. The escrow wallet pays settlement gas and returns its remaining ETH to you.`
+                      : `Fund ${f(Number(o.budget_usdg) + Number(o.evaluator_fee_usdg || 0))} USDG from your internal Autarch balance into escrow.`,
+                }),
+                (0, G.jsxs)(E, {
+                  onClick: () =>
+                    j(
+                      `fund`,
+                      () =>
                         o.escrow_mode === `onchain`
-                          ? `Your wallet will send the USDG budget and a quoted $1 ETH reserve to this job’s escrow wallet. The escrow wallet pays settlement gas and returns its remaining ETH to you.`
-                          : `Fund ${f(Number(o.budget_usdg) + Number(o.evaluator_fee_usdg || 0))} USDG from your internal Autarch balance into escrow.`,
-                    }),
-                    (0, G.jsxs)(E, {
-                      onClick: () =>
-                        j(
-                          `fund`,
-                          () =>
-                            o.escrow_mode === `onchain`
-                              ? k.fundEscrow(e.id)
-                              : m.fundJob(n, e.id),
-                          `Job funded and moved into escrow.`,
-                        ),
-                      disabled: p === `fund`,
-                      children: [
-                        p === `fund` ? `Funding…` : `Fund job`,
-                        ` `,
-                        (0, G.jsx)(O, { size: 14 }),
-                      ],
-                    }),
+                          ? k.fundEscrow(e.id)
+                          : m.fundJob(n, e.id),
+                      `Job funded and moved into escrow.`,
+                    ),
+                  disabled: p === `fund`,
+                  children: [
+                    p === `fund` ? `Funding…` : `Fund job`,
+                    ` `,
+                    (0, G.jsx)(O, { size: 14 }),
                   ],
                 }),
-              N === `Funded` &&
-                F &&
-                (0, G.jsxs)(`form`, {
-                  onSubmit: (t) => {
-                    t.preventDefault();
-                    let r = x
-                      .split(/\n|,/)
-                      .map((e) => e.trim())
-                      .filter(Boolean);
-                    j(
-                      `submit`,
-                      () =>
-                        m.submitJob(n, e.id, { deliverable: _, evidence: r }),
-                      `Delivery submitted for evaluation.`,
-                    );
-                  },
+              ],
+            }),
+            N === `Funded` &&
+            F &&
+            (0, G.jsxs)(`form`, {
+              onSubmit: (t) => {
+                t.preventDefault();
+                let r = x
+                  .split(/\n|,/)
+                  .map((e) => e.trim())
+                  .filter(Boolean);
+                j(
+                  `submit`,
+                  () =>
+                    m.submitJob(n, e.id, { deliverable: _, evidence: r }),
+                  `Delivery submitted for evaluation.`,
+                );
+              },
+              children: [
+                (0, G.jsx)(`p`, {
+                  children: `Submit the final work. Autarch encrypts the delivery at rest.`,
+                }),
+                (0, G.jsx)(w, {
+                  label: `Delivery`,
+                  children: (0, G.jsx)(`textarea`, {
+                    required: !0,
+                    minLength: 1,
+                    rows: 5,
+                    value: _,
+                    onChange: (e) => v(e.target.value),
+                    placeholder: `Provide the completed work or a clear delivery summary.`,
+                  }),
+                }),
+                (0, G.jsx)(w, {
+                  label: `Evidence links`,
+                  help: `Optional. One HTTPS URL per line.`,
+                  children: (0, G.jsx)(`textarea`, {
+                    rows: 2,
+                    value: x,
+                    onChange: (e) => S(e.target.value),
+                    placeholder: `https://…`,
+                  }),
+                }),
+                (0, G.jsxs)(E, {
+                  type: `submit`,
+                  disabled: p === `submit`,
                   children: [
-                    (0, G.jsx)(`p`, {
-                      children: `Submit the final work. Autarch encrypts the delivery at rest.`,
-                    }),
-                    (0, G.jsx)(w, {
-                      label: `Delivery`,
-                      children: (0, G.jsx)(`textarea`, {
-                        required: !0,
-                        minLength: 1,
-                        rows: 5,
-                        value: _,
-                        onChange: (e) => v(e.target.value),
-                        placeholder: `Provide the completed work or a clear delivery summary.`,
+                    p === `submit` ? `Submitting…` : `Submit delivery`,
+                    ` `,
+                    (0, G.jsx)(d, { size: 14 }),
+                  ],
+                }),
+              ],
+            }),
+            N === `Submitted` &&
+            I &&
+            (0, G.jsxs)(`form`, {
+              onSubmit: (t) => {
+                (t.preventDefault(),
+                  j(
+                    `evaluate`,
+                    () =>
+                      m.evaluateJob(n, e.id, {
+                        outcome: `accepted`,
+                        rationale: C,
                       }),
-                    }),
-                    (0, G.jsx)(w, {
-                      label: `Evidence links`,
-                      help: `Optional. One HTTPS URL per line.`,
-                      children: (0, G.jsx)(`textarea`, {
-                        rows: 2,
-                        value: x,
-                        onChange: (e) => S(e.target.value),
-                        placeholder: `https://…`,
-                      }),
-                    }),
+                    `Job accepted and escrow settled.`,
+                  ));
+              },
+              children: [
+                (0, G.jsx)(`p`, {
+                  children: `Review the private delivery against the agreed criteria. Accepting releases escrow to the agent owner.`,
+                }),
+                (0, G.jsx)(w, {
+                  label: `Evaluation rationale`,
+                  children: (0, G.jsx)(`textarea`, {
+                    required: !0,
+                    minLength: 1,
+                    rows: 4,
+                    value: C,
+                    onChange: (e) => D(e.target.value),
+                    placeholder: `Explain how the delivery meets the criteria.`,
+                  }),
+                }),
+                (0, G.jsxs)(`div`, {
+                  className: `job-actions`,
+                  children: [
                     (0, G.jsxs)(E, {
                       type: `submit`,
-                      disabled: p === `submit`,
+                      disabled: p === `accept`,
                       children: [
-                        p === `submit` ? `Submitting…` : `Submit delivery`,
+                        p === `accept` ? `Settling…` : `Accept and settle`,
                         ` `,
-                        (0, G.jsx)(d, { size: 14 }),
+                        (0, G.jsx)(u, { size: 14 }),
                       ],
                     }),
-                  ],
-                }),
-              N === `Submitted` &&
-                I &&
-                (0, G.jsxs)(`form`, {
-                  onSubmit: (t) => {
-                    (t.preventDefault(),
-                      j(
-                        `evaluate`,
-                        () =>
-                          m.evaluateJob(n, e.id, {
-                            outcome: `accepted`,
-                            rationale: C,
-                          }),
-                        `Job accepted and escrow settled.`,
-                      ));
-                  },
-                  children: [
-                    (0, G.jsx)(`p`, {
-                      children: `Review the private delivery against the agreed criteria. Accepting releases escrow to the agent owner.`,
-                    }),
-                    (0, G.jsx)(w, {
-                      label: `Evaluation rationale`,
-                      children: (0, G.jsx)(`textarea`, {
-                        required: !0,
-                        minLength: 1,
-                        rows: 4,
-                        value: C,
-                        onChange: (e) => D(e.target.value),
-                        placeholder: `Explain how the delivery meets the criteria.`,
-                      }),
-                    }),
-                    (0, G.jsxs)(`div`, {
-                      className: `job-actions`,
-                      children: [
-                        (0, G.jsxs)(E, {
-                          type: `submit`,
-                          disabled: p === `accept`,
-                          children: [
-                            p === `accept` ? `Settling…` : `Accept and settle`,
-                            ` `,
-                            (0, G.jsx)(u, { size: 14 }),
-                          ],
-                        }),
-                        (0, G.jsx)(E, {
-                          type: `button`,
-                          secondary: !0,
-                          disabled: p === `reject` || !C.trim(),
-                          onClick: () =>
-                            j(
-                              `reject`,
-                              () =>
-                                m.evaluateJob(n, e.id, {
-                                  outcome: `rejected`,
-                                  rationale: C,
-                                }),
-                              `Job rejected and escrow refunded to the client.`,
-                            ),
-                          children:
-                            p === `reject` ? `Rejecting…` : `Reject and refund`,
-                        }),
-                      ],
+                    (0, G.jsx)(E, {
+                      type: `button`,
+                      secondary: !0,
+                      disabled: p === `reject` || !C.trim(),
+                      onClick: () =>
+                        j(
+                          `reject`,
+                          () =>
+                            m.evaluateJob(n, e.id, {
+                              outcome: `rejected`,
+                              rationale: C,
+                            }),
+                          `Job rejected and escrow refunded to the client.`,
+                        ),
+                      children:
+                        p === `reject` ? `Rejecting…` : `Reject and refund`,
                     }),
                   ],
                 }),
-              N === `Open` &&
-                !P &&
-                (0, G.jsx)(`p`, {
-                  children: `Waiting for the client to fund this job.`,
-                }),
-              N === `Funded` &&
-                !F &&
-                (0, G.jsx)(`p`, {
-                  children: `Escrow is funded. Waiting for the agent operator to submit delivery.`,
-                }),
-              N === `Submitted` &&
-                !I &&
-                (0, G.jsx)(`p`, {
-                  children: o.evaluator_id
-                    ? `Waiting for the assigned evaluator to settle this job.`
-                    : `No evaluator is assigned, so this submitted job cannot settle yet.`,
-                }),
-              [`Completed`, `Rejected`, `Expired`, `Cancelled`].includes(N) &&
-                (0, G.jsxs)(`p`, {
-                  children: [
-                    `This job is closed.`,
-                    ` `,
-                    o.escrow_mode === `onchain`
-                      ? `Settlement transaction hashes are retained in Autarch’s escrow record.`
-                      : `Its final status is recorded in the Autarch ledger.`,
-                  ],
-                }),
-            ],
-          }),
+              ],
+            }),
+            N === `Open` &&
+            !P &&
+            (0, G.jsx)(`p`, {
+              children: `Waiting for the client to fund this job.`,
+            }),
+            N === `Funded` &&
+            !F &&
+            (0, G.jsx)(`p`, {
+              children: `Escrow is funded. Waiting for the agent operator to submit delivery.`,
+            }),
+            N === `Submitted` &&
+            !I &&
+            (0, G.jsx)(`p`, {
+              children: o.evaluator_id
+                ? `Waiting for the assigned evaluator to settle this job.`
+                : `No evaluator is assigned, so this submitted job cannot settle yet.`,
+            }),
+            [`Completed`, `Rejected`, `Expired`, `Cancelled`].includes(N) &&
+            (0, G.jsxs)(`p`, {
+              children: [
+                `This job is closed.`,
+                ` `,
+                o.escrow_mode === `onchain`
+                  ? `Settlement transaction hashes are retained in Autarch’s escrow record.`
+                  : `Its final status is recorded in the Autarch ledger.`,
+              ],
+            }),
+          ],
+        }),
       ],
     }),
   });
@@ -2007,10 +2007,10 @@ function ue({ token: e }) {
           ],
         }),
         t &&
-          (0, G.jsxs)(`p`, {
-            className: `mono muted`,
-            children: [`Profile status: `, t.active ? `active` : `inactive`],
-          }),
+        (0, G.jsxs)(`p`, {
+          className: `mono muted`,
+          children: [`Profile status: `, t.active ? `active` : `inactive`],
+        }),
         s && (0, G.jsx)(h, { error: !0, children: s }),
         (0, G.jsxs)(E, {
           type: `submit`,
@@ -2183,12 +2183,12 @@ function de({ token: e, currentUser: t, onNotice: n }) {
 }
 function fe({ token: e, onSave: t }) {
   let [n, r] = (0, W.useState)({
-      name: ``,
-      symbol: ``,
-      category: `Research`,
-      description: ``,
-      price: 100,
-    }),
+    name: ``,
+    symbol: ``,
+    category: `Research`,
+    description: ``,
+    price: 100,
+  }),
     [i, a] = (0, W.useState)(``),
     [s, l] = (0, W.useState)(!1),
     u = (e, t) => {
@@ -2222,10 +2222,10 @@ function fe({ token: e, onSave: t }) {
               l(!0);
               try {
                 let r = `${n.name
-                    .toLowerCase()
-                    .trim()
-                    .replace(/[^a-z0-9]+/g, `-`)
-                    .replace(/^-|-$/g, ``)}-${crypto.randomUUID().slice(0, 8)}`,
+                  .toLowerCase()
+                  .trim()
+                  .replace(/[^a-z0-9]+/g, `-`)
+                  .replace(/^-|-$/g, ``)}-${crypto.randomUUID().slice(0, 8)}`,
                   i = await m.createAgent(e, {
                     slug: r,
                     name: n.name.trim(),
