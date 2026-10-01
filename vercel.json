@@ -1,15 +1,9 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "liegeagents-download/www.liegeagents.com/index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/liegeagents-download/www.liegeagents.com/$1"
+      "source": "/(.*)",
+      "destination": "/liegeagents-download/www.liegeagents.com/$1"
     }
   ]
 }
