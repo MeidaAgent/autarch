@@ -1,0 +1,71 @@
+.job-criteria {
+  gap: 8px;
+  margin: 0 0 22px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+.job-criteria li {
+  color: var(--l-muted);
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.55;
+  display: flex;
+}
+.job-criteria svg {
+  color: var(--l-green);
+  flex: none;
+  margin-top: 2px;
+}
+.evidence-links {
+  gap: 8px;
+  margin: -8px 0 22px;
+  display: grid;
+}
+.evidence-links a {
+  color: var(--l-green);
+  font: 10px var(--font-paper-mono);
+  overflow-wrap: anywhere;
+  align-items: center;
+  gap: 7px;
+  display: flex;
+}
+.live-job-action {
+  border-top: 1px solid var(--l-border);
+  margin-top: 27px;
+  padding-top: 3px;
+}
+.live-job-action > p {
+  margin-bottom: 17px;
+}
+.check-field {
+  color: var(--l-text);
+  align-items: center;
+  gap: 9px;
+  margin: -4px 0 20px;
+  font-size: 12px;
+  display: flex;
+}
+.check-field input {
+  accent-color: var(--l-green);
+}
+.operator-panel {
+  background: linear-gradient(135deg, #10211888, var(--l-panel));
+  border-color: #396049;
+}
+.operator-panel > .eyebrow {
+  color: var(--l-green);
+  margin-bottom: 9px;
+  font-size: 9px;
+  display: block;
+}
+.operator-panel form {
+  border: 1px solid var(--l-border);
+  background: var(--l-bg);
+  border-radius: 6px;
+  padding: 17px;
+}
+.operator-panel .field {
+  margin-bottom: 15px;
+}
