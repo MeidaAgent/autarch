@@ -601,7 +601,7 @@ function ne({
     }),
   });
 }
-var re = `autarch.workspace.v2`,
+var re = `Autarch.workspace.v2`,
   J = (e) => new Date(Date.now() + e * 864e5).toISOString().slice(0, 10),
   Y = () => ({ version: 2, saved: [] });
 function ie() {
@@ -730,7 +730,7 @@ function Z() {
         ),
         n = document.createElement(`a`);
       ((n.href = t),
-        (n.download = `autarch-workspace-preferences.json`),
+        (n.download = `Autarch-workspace-preferences.json`),
         n.click(),
         setTimeout(() => URL.revokeObjectURL(t), 1e3),
         Y(`Workspace preferences exported.`));
@@ -1100,7 +1100,7 @@ function Z() {
             children: [
               (0, G.jsxs)(`span`, {
                 children: [
-                  `autarch `,
+                  `Autarch `,
                   (0, G.jsx)(`i`, {}),
                   ` Agents work. You’re the autarch.`,
                 ],
