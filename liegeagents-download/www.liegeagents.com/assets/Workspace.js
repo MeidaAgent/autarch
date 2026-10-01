@@ -946,7 +946,7 @@ function Z() {
                   ],
                 }),
               n && (0, G.jsx)(h, { error: !0, children: n }),
-              B && (0, G.jsx)(h, { error: !0, children: B }),
+              F.apiSession && B && (0, G.jsx)(h, { error: !0, children: B }),
               (o === `overview` || !X.some((e) => e[0] === o)) &&
                 (0, G.jsx)(te, {
                   state: { ...e, jobs: K },
