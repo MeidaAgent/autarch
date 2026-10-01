@@ -1212,6 +1212,47 @@ section[id] {
   font-size: 13px;
   display: flex;
 }
+.workspace-connect-gate {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgb(0 0 0 / 72%);
+}
+.workspace-connect-panel {
+  width: min(100%, 420px);
+  padding: 32px;
+  border: 1px solid var(--l-border);
+  border-radius: 8px;
+  background: var(--l-bg);
+  color: var(--l-text);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 42%);
+}
+.workspace-connect-panel .eyebrow {
+  color: var(--l-green);
+}
+.workspace-connect-panel h1 {
+  margin: 14px 0 8px;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.workspace-connect-panel p {
+  margin: 0 0 22px;
+  color: var(--l-muted);
+  line-height: 1.6;
+}
+.workspace-connect-panel .wallet-connect {
+  width: 100%;
+  justify-content: center;
+}
+.workspace-connect-panel > a {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--l-muted);
+  font-size: 12px;
+}
 .app-sidebar {
   border-right: 1px solid var(--l-border);
   background: var(--l-bg);
@@ -6068,5 +6109,6 @@ section[id] {
     font-size: 10px;
   }
 }
-. d e x s c r e e n e r - b u t t o n ,   . t o k e n - a d d r e s s   {   d i s p l a y :   n o n e   ! i m p o r t a n t ;   }  
+. d e x s c r e e n e r - b u t t o n ,   . t o k e n - a d d r e s s   {   d i s p l a y :   n o n e   ! i m p o r t a n t ;   } 
+ 
  

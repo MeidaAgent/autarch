@@ -772,6 +772,32 @@ function Z() {
         Y(`Encrypted job created in Autarch.`),
         k({ type: `job`, id: e.id }));
     };
+  if (!F.session.address) {
+    return (0, G.jsx)(`main`, {
+      className: `workspace-connect-gate`,
+      role: `dialog`,
+      "aria-modal": `true`,
+      "aria-labelledby": `workspace-connect-title`,
+      children: (0, G.jsxs)(`section`, {
+        className: `workspace-connect-panel`,
+        children: [
+          (0, G.jsx)(`span`, {
+            className: `eyebrow`,
+            children: `AUTARCH / WORKSPACE`,
+          }),
+          (0, G.jsx)(`h1`, {
+            id: `workspace-connect-title`,
+            children: `Connect your wallet`,
+          }),
+          (0, G.jsx)(`p`, {
+            children: `Connect a wallet to access your Autarch workspace.`,
+          }),
+          (0, G.jsx)(C, {}),
+          (0, G.jsx)(`a`, { href: `/`, children: `Back to Autarch` }),
+        ],
+      }),
+    });
+  }
   return (0, G.jsxs)(`div`, {
     className: `workspace`,
     children: [
