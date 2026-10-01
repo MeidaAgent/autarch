@@ -19630,6 +19630,14 @@ function V_({ html: e, locale: t = `en` }) {
             }),
             (0, O.jsx)(`a`, {
               ...t,
+              onClick: (e) => {
+                const { apiSession } = T_();
+                if (!apiSession) {
+                  e.preventDefault();
+                  const { openConnectModal } = zg();
+                  openConnectModal();
+                }
+              },
               children: (0, tt.domToReact)(e.children, l),
             }),
           ],
