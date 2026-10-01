@@ -19619,28 +19619,17 @@ function V_({ html: e, locale: t = `en` }) {
         });
       if (o.href === `/app` && o[`data-slot`] === `button`) {
         let t = (0, tt.attributesToProps)(o);
-        return (0, O.jsxs)(O.Fragment, {
-          children: [
-            (0, O.jsxs)(`a`, {
-              className: `dexscreener-button`,
-              href: z_,
-              target: `_blank`,
-              rel: `noreferrer`,
-              children: [`Dexscreener `, (0, O.jsx)(Ir, { size: 14 })],
-            }),
-            (0, O.jsx)(`a`, {
-              ...t,
-              onClick: (e) => {
-                const { apiSession } = T_();
-                if (!apiSession) {
-                  e.preventDefault();
-                  const { openConnectModal } = zg();
-                  openConnectModal();
-                }
-              },
-              children: (0, tt.domToReact)(e.children, l),
-            }),
-          ],
+        return (0, O.jsx)(`a`, {
+          ...t,
+          onClick: (e) => {
+            const { apiSession } = T_();
+            if (!apiSession) {
+              e.preventDefault();
+              const { openConnectModal } = zg();
+              openConnectModal();
+            }
+          },
+          children: (0, tt.domToReact)(e.children, l),
         });
       }
       if (e.name === `button`) {
