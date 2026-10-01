@@ -19523,7 +19523,7 @@ var L_ = {
       [`Product status`, `What is available today`, `/docs/status`],
     ],
   },
-  R_ = `0xc32ab2e562ade6fba6d3d1e3960d49b0957ef645`,
+  R_ = `0x77c2790e5d29a3be2d59b28b95584bae42cceca4`,
   z_ = `https://dexscreener.com/search?q=${R_}`;
 function B_({ footer: e = !1 }) {
   let [t, n] = (0, k.useState)(!1);
@@ -19623,7 +19623,7 @@ function V_({ html: e, locale: t = `en` }) {
         return (0, O.jsxs)(O.Fragment, {
           children: [
             (0, O.jsxs)(`a`, {
-              className: `dexscreener-button hidden`,
+              className: `dexscreener-button`,
               href: z_,
               target: `_blank`,
               rel: `noreferrer`,
