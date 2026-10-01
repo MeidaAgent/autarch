@@ -19263,7 +19263,6 @@ function O_() {
 }
 var k_ = [
   { id: `x`, label: `X`, url: `https://x.com/Autarchagents` },
-  { id: `telegram`, label: `Telegram`, url: `https://t.me/autarchagents` },
 ];
 function A_({ id: e }) {
   return e === `x`
