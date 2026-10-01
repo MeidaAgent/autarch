@@ -691,6 +691,11 @@ function Z() {
         return () => clearTimeout(e);
       }
     }, [A]));
+  (0, W.useEffect)(() => {
+    if (!F.apiSession && location.pathname.startsWith(`/app`)) {
+      location.href = `/`;
+    }
+  }, [F.apiSession]);
   let J = (e, t = `All`) => {
     (f(e),
       b(``),
