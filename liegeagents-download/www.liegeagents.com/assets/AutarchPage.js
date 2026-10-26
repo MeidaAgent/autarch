@@ -169,14 +169,14 @@ function b() {
                           className: `brand-downloads`,
                           children: [
                             (0, y.jsx)(`img`, {
-                              src: `../brand/banner-3x1.png`,
+                              src: `/brand/banner-3x1.png`,
                               alt: `Autarch banner with green lines and the loop logo on white`,
                             }),
                             (0, y.jsxs)(`div`, {
                               children: [
                                 (0, y.jsxs)(`a`, {
                                   className: `l-button secondary`,
-                                  href: `../brand/logo-transparent.png`,
+                                  href: `/brand/logo-transparent.png`,
                                   download: !0,
                                   children: [
                                     (0, y.jsx)(_, { size: 15 }),
@@ -185,7 +185,7 @@ function b() {
                                 }),
                                 (0, y.jsxs)(`a`, {
                                   className: `l-button secondary`,
-                                  href: `../brand/banner-3x1.png`,
+                                  href: `/brand/banner-3x1.png`,
                                   download: !0,
                                   children: [
                                     (0, y.jsx)(_, { size: 15 }),

@@ -213,15 +213,37 @@ app.put('/api/v1/evaluators/me', authenticate, async (req, res) => {
 
 // Serve the frontend
 const frontendPath = path.join(__dirname, 'liegeagents-download', 'www.liegeagents.com');
+const brandPath = path.join(frontendPath, 'brand');
+
+// Serve brand assets directly on any brand route
+app.use('/brand', express.static(brandPath));
+app.use('/app/brand', express.static(brandPath));
+app.use((req, res, next) => {
+  if (req.path.includes('/brand/')) {
+    const filename = req.path.split('/brand/').pop();
+    const filePath = path.join(brandPath, filename);
+    return res.sendFile(filePath, (err) => {
+      if (err) next();
+    });
+  }
+  next();
+});
+
 app.use(express.static(frontendPath));
 
 // Handle React Router SPA fallback for /app routes
-app.use('/app', (req, res) => {
+app.use('/app', (req, res, next) => {
+  if (path.extname(req.path)) {
+    return next();
+  }
   res.sendFile(path.join(frontendPath, 'app', 'index.html'));
 });
 
 // Fallback for other routes (if any)
 app.use((req, res) => {
+  if (path.extname(req.path)) {
+    return res.status(404).send('File not found');
+  }
   res.sendFile(path.join(frontendPath, 'index.html'));
 });
 

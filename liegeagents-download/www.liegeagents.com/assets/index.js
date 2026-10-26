@@ -21388,7 +21388,7 @@ var tu = vc()({
     ],
     links: [
       { rel: `stylesheet`, href: Zl },
-      { rel: `icon`, href: `../brand/logo-transparent.png`, type: `image/png` },
+      { rel: `icon`, href: `/brand/logo-transparent.png`, type: `image/png` },
     ],
   }),
   shellComponent: nu,

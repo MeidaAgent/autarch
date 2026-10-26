@@ -368,7 +368,7 @@ function te({
                       ],
                     }),
                     (0, G.jsx)(`img`, {
-                      src: `../brand/usdg-official.png`,
+                      src: `/brand/usdg-official.png`,
                       alt: `USDG`,
                       className: `currency-token`,
                     }),
@@ -1092,7 +1092,7 @@ function Z() {
                       (0, G.jsx)(`h2`, { children: `Connection status` }),
                       (0, G.jsx)(`p`, {
                         children: F.session.address
-                          ? `Connected as ${F.session.address} on ${F.ready ? `Arc` : `another network`}.`
+                          ? `Connected as ${F.session.address} on ${F.ready ? `Robinhood` : `another network`}.`
                           : `Use Connect wallet to open the wallet provider.`,
                       }),
                       F.apiSession &&
